@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: epilogue ;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 77%;
+}
+
+header{
+    background-color:white;
+}
+
+footer{
+    background-color:blue;
+    height: 464px;
+}
+
+/* .testimonial{
+    background-color: red;
+    width: inherit;
+    height: 345px;
+    position: absolute;
+    
+}
+
+.testimonial img{
+    position: absolute;
+    top: -40px;
+    float: left;
+}
+
+.testimonial-info{
+    text-align: right;
+} */
