@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: epilogue ;
-    
+    font-family: 'Epilogue';
 }
 
 body{
@@ -11,7 +10,6 @@ body{
 
 
 .wrapper{
-    /* position: relative; */
     margin: 0 auto;
     max-width: 77%;
 }
@@ -32,7 +30,6 @@ nav{
 
 nav .logo{
     height: 24px;
-    
 }
 
 header{
@@ -50,33 +47,32 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
-    height: 600px;
-    /* background-color: red; */
-    
+    height: 600px;    
 }
 
-/* .left-info h1::before{
+.left-info{
+    position: relative;
+}
+
+/* .left-info #curve::after{
     content: url(assets/pattern-curved-line-1.svg);
     width: 247px;
     position: absolute;
-    left:245px;
-    bottom:90px;
-
+    /* top: 10%;
+    left:30%;
+    bottom:100%;
 } */
 
-/* .top-curve{
+.top-curve{
     position: absolute;
-    top: 38.68px;
-    left: 250px;
+    top: 10%;
+    left: 27%;
     z-index: 2;
-} */
+}
 
 .bg-img img{
     position: absolute;
     left: 36.2%;
-    /* left: 410px; */
-    /* width:350px;
-    height: 600px; */
     z-index: 1;
 }
 
@@ -94,7 +90,6 @@ header{
     font-weight: 700;
     position: relative;
     top: -10px;
-    /* font-size: 4.5em; */
     font-size: 62px;
     letter-spacing: -1px;
     margin-top: 10px;
@@ -121,15 +116,12 @@ header{
     align-self: center;
     width: 190px;
     height: 345px;
-    z-index: 3;
-    /* background-color: blue; */
-    
+    z-index: 3;    
 }
 
 .hero-section .right-info .right-info-container{
     width: inherit;
     height: inherit;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,7 +132,6 @@ header{
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
-    /* identical to box height, or 117% */
     letter-spacing: -0.5px;
     color: #172339;
 }
@@ -150,14 +141,13 @@ header{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    /* identical to box height, or 162% */
     letter-spacing: 2.5px;
     color: #49566D;
 }
 
 /* BUTTONS */
 .btn{
-    /* display:inline-block; */
+    display:inline-block;
     border: 1px solid #172339;
     border-radius: 6px;
     color:#172339;
@@ -181,7 +171,7 @@ header{
     color: #ffffff;;
     width: 256px;
     height: 61px;
-    padding: 15px 30px;
+    padding: 20px 30px;
     text-align: center;
 }
 
@@ -201,21 +191,24 @@ header{
 .testimonial{
     position: absolute;           /*relative to body*/
     top:970px;
-    /* top:-285px; */
-    /* position: relative; */
     background-color: #172339;
     width:77%;
     height: 545px;   
     display: flex;
     flex-direction: row;
-    justify-content: ;
     border-radius: 15px;
 }
 
-.testimonial .blur-img img{
+.testimonial .blur-img img.jeremy{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    left: 10%;
+}
+
+.testimonial .blur-img img.blur{
     position: relative;
     top: 70px;
-    /* background-color: green; */
     width: 100%;
     flex-shrink:3;
 }
@@ -228,11 +221,7 @@ header{
 
 .testimonial-info{
     align-self: center;
-    padding: 70px;
-    /* background-color: red; */
-    /* width: 350px;
-    height: 100px; */
-    
+    padding:0 70px;
 }
 
 .testimonial-info h2{
@@ -317,7 +306,7 @@ footer{
         max-width: 90%;
         /* position: relative; */
     }
-    
+
 
     header{
         height: 1322px;
@@ -336,14 +325,20 @@ footer{
 
     .hero-section{
         /* margin-top: 80px; */
-        
         top: 170px;
         height: 482px;
         flex-direction: column;
-        /* background-color: green; */
+    }
+
+    .top-curve{
+        position: absolute;
+        top: -15%;
+        left: 35%;
+        z-index: 2;
     }
     
-    /* making img absolute i chnage measured vals in new class */
+        
+    /* making img absolute i change measured vals */
     .bg-img{
         width: 281px;
         height: 482px;
@@ -356,8 +351,6 @@ footer{
 
     .bg-img img{
         /* position: absolute; */
-        /* left: 450px; */
-        /* left: 919px; */
         left:0;
         bottom: 0;
         width:100%;
@@ -367,27 +360,14 @@ footer{
     }
 
     .hero-section .right-info{
-        /* position: relative; */
-        /* top: 100px; */
-        /* align-self: flex-start; */
-        /* justify-content: space-around; */
         width: 100%;
-        top: 108px;
-        /* width: 190px;
-        height: 345px; */
-        /* z-index: 3; */
-        /* background-color: blue; */
-        
+        top: 108px;        
     }
     
     .hero-section .right-info .right-info-container{
-        /* width: 90%; */
-        /* background-color: green; */
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        /* align-items:center ; */
-        ;
+        justify-content: space-around;        ;
     }
     
     .hero-section .right-info .right-info-container h1,
@@ -397,7 +377,7 @@ footer{
 
     .testimonial{
         top: 1005px;
-        height: 640px;
+        height: 654px;
         width: 90%;
         flex-direction: column;
     }
@@ -408,11 +388,20 @@ footer{
         align-self: center;
     }
 
-    .testimonial .blur-img img{
+    .testimonial .blur-img img.blur{
         position: relative;
         top: unset;
         width: 100%;
         flex-shrink:3;
+    }
+
+    .testimonial .blur-img img.jeremy{
+        /* position: absolute; */
+        z-index: 2;
+        bottom: 60%;
+        left: 33%;
+        width: 252px;
+        height: 402px;
     }
 
     .img-link-line{
@@ -424,12 +413,14 @@ footer{
     .img-link-line img{
         position: relative;
         top:unset;
-        bottom: -20px;
+        bottom: -80px;
         width: 100%;
     }
 
     .testimonial-info{
         text-align: center;
+        position: relative;
+        bottom: -100px;
     }
 
     .footer{
@@ -444,12 +435,10 @@ footer{
         justify-content: space-between;
         
     }
-    
-
 }
 
 
-/* PHONE MEDIA QUERY */
+/* MEDIA QUERY FOR PHONE*/
 
 @media(max-width:415px){
     body{
@@ -477,7 +466,6 @@ footer{
     .btn{
         font-size: 14px;
         line-height: 24px;
-        /* identical to box height, or 171% */
         letter-spacing: -0.14px;
     }
 
@@ -489,6 +477,19 @@ footer{
         top: 55px;
         height: 1000px;
         justify-content: space-between;
+    }
+
+    .top-curve{
+        position: absolute;
+        top: -15%;
+        left: 41%;
+        z-index: 2;
+        width: 151px ;
+        height: 16px ;
+    }
+
+    .top-curve img{
+        width: 100%;
     }
 
     .hero-section .left-info h1{
@@ -542,7 +543,6 @@ footer{
         /* align-self: flex-start; */
         /* justify-content: space-around; */
         width: 100%;
-        
         /* width: 190px;
         height: 345px; */
         /* z-index: 3; */
@@ -554,12 +554,27 @@ footer{
         bottom: 286px;
     }
 
+    .img-link-line img{
+        position: relative;
+        top:unset;
+        bottom: 5px;
+        width: 100%;
+    }
+
+    
+    .testimonial .blur-img img.jeremy{
+        /* position: absolute; */
+        bottom: 75%;
+        left: 18%;
+    }
+
     .testimonial-info{
         align-self: center;
         margin-top: 40px;
         padding: 0px;
-        
+        bottom: 0px;
     }
+    
 
     footer{
         height: 420px;
@@ -569,13 +584,9 @@ footer{
         top: unset;
         bottom: -190px;
         flex-direction: column;
-        /* width: 125px;
-        height:150px; */
         justify-content: space-around;
         align-items: center;
         gap: 43px;
-
-        
     }
 }
 
